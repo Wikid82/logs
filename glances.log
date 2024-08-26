@@ -1,0 +1,107 @@
+2024-08-25 17:43:30,566 -- INFO -- Start Glances 3.4.0.3
+2024-08-25 17:43:30,566 -- INFO -- CPython 3.12.3 (/usr/bin/python3) and psutil 5.9.8 detected
+2024-08-25 18:34:32,299 -- INFO -- Start Glances 3.4.0.3
+2024-08-25 18:34:32,464 -- INFO -- CPython 3.12.3 (/usr/bin/python3) and psutil 5.9.8 detected
+2024-08-25 18:34:47,104 -- INFO -- Start Glances 3.4.0.3
+2024-08-25 18:34:47,104 -- INFO -- CPython 3.12.3 (/usr/bin/python3) and psutil 5.9.8 detected
+2024-08-25 18:34:47,123 -- INFO -- Read configuration file '/etc/glances/glances.conf'
+2024-08-25 18:34:48,978 -- INFO -- Start GlancesStandalone mode
+2024-08-25 18:34:48,982 -- WARNING -- Missing Python Lib (No module named 'wifi'), Wifi plugin is disabled
+2024-08-25 18:34:48,982 -- WARNING -- Wifi lib is not compliant with Python 3, Wifi plugin is disabled
+2024-08-25 18:34:49,013 -- WARNING -- Missing Python Lib (No module named 'pymdstat'), Raid plugin is disabled
+2024-08-25 18:34:49,098 -- WARNING -- Error loading Podman deps Lib. Podman feature in the Containers plugin is disabled (No module named 'podman')
+2024-08-25 18:34:49,099 -- ERROR -- containers (Docker) plugin - Can't connect to Docker (Error while fetching server API version: HTTPConnection.request() got an unexpected keyword argument 'chunked')
+2024-08-25 18:34:49,099 -- WARNING -- Missing Python Lib (No module named 'py3nvml'), Nvidia GPU plugin is disabled
+2024-08-25 18:34:49,107 -- WARNING -- Sparklines module not found (No module named 'sparklines')
+2024-08-25 18:34:49,110 -- WARNING -- Missing Python Lib (No module named 'pySMART'), HDD Smart plugin is disabled
+2024-08-25 18:37:22,541 -- INFO -- Start Glances 3.4.0.3
+2024-08-25 18:37:22,541 -- INFO -- CPython 3.12.3 (/usr/bin/python3) and psutil 5.9.8 detected
+2024-08-25 18:37:22,544 -- INFO -- Read configuration file '/etc/glances/glances.conf'
+2024-08-25 18:37:22,548 -- INFO -- Start GlancesWebServer mode
+2024-08-25 18:37:22,552 -- WARNING -- Missing Python Lib (No module named 'wifi'), Wifi plugin is disabled
+2024-08-25 18:37:22,552 -- WARNING -- Wifi lib is not compliant with Python 3, Wifi plugin is disabled
+2024-08-25 18:37:22,581 -- WARNING -- Missing Python Lib (No module named 'pymdstat'), Raid plugin is disabled
+2024-08-25 18:37:22,663 -- WARNING -- Error loading Podman deps Lib. Podman feature in the Containers plugin is disabled (No module named 'podman')
+2024-08-25 18:37:22,664 -- ERROR -- containers (Docker) plugin - Can't connect to Docker (Error while fetching server API version: HTTPConnection.request() got an unexpected keyword argument 'chunked')
+2024-08-25 18:37:22,664 -- WARNING -- Missing Python Lib (No module named 'py3nvml'), Nvidia GPU plugin is disabled
+2024-08-25 18:37:22,671 -- WARNING -- Sparklines module not found (No module named 'sparklines')
+2024-08-25 18:37:22,674 -- WARNING -- Missing Python Lib (No module named 'pySMART'), HDD Smart plugin is disabled
+2024-08-25 18:37:22,798 -- INFO -- Glances RESTful API Server started on http://0.0.0.0:61208/api/3/
+2024-08-25 18:37:22,799 -- INFO -- Glances Web User Interface started on http://0.0.0.0:61208/
+2024-08-25 18:37:22,800 -- CRITICAL -- Error: Can not ran Glances Web server ([Errno 98] Address already in use)
+2024-08-25 18:44:56,202 -- INFO -- Start Glances 3.4.0.3
+2024-08-25 18:44:56,257 -- INFO -- CPython 3.12.3 (/usr/bin/python3) and psutil 5.9.8 detected
+2024-08-25 18:44:56,259 -- INFO -- Read configuration file '/etc/glances/glances.conf'
+2024-08-25 18:44:57,261 -- INFO -- Start GlancesStandalone mode
+2024-08-25 18:44:57,265 -- WARNING -- Missing Python Lib (No module named 'wifi'), Wifi plugin is disabled
+2024-08-25 18:44:57,265 -- WARNING -- Wifi lib is not compliant with Python 3, Wifi plugin is disabled
+2024-08-25 18:44:57,295 -- WARNING -- Missing Python Lib (No module named 'pymdstat'), Raid plugin is disabled
+2024-08-25 18:44:57,374 -- WARNING -- Error loading Podman deps Lib. Podman feature in the Containers plugin is disabled (No module named 'podman')
+2024-08-25 18:44:57,469 -- ERROR -- containers (Docker) plugin - Can't connect to Docker (Error while fetching server API version: HTTPConnection.request() got an unexpected keyword argument 'chunked')
+2024-08-25 18:44:57,469 -- WARNING -- Missing Python Lib (No module named 'py3nvml'), Nvidia GPU plugin is disabled
+2024-08-25 18:44:57,477 -- WARNING -- Sparklines module not found (No module named 'sparklines')
+2024-08-25 18:44:57,480 -- WARNING -- Missing Python Lib (No module named 'pySMART'), HDD Smart plugin is disabled
+2024-08-25 18:47:39,016 -- INFO -- Start Glances 3.4.0.3
+2024-08-25 18:47:39,016 -- INFO -- CPython 3.12.3 (/usr/bin/python3) and psutil 5.9.8 detected
+2024-08-25 18:47:39,019 -- INFO -- Read configuration file '/etc/glances/glances.conf'
+2024-08-25 18:47:39,023 -- INFO -- Start GlancesWebServer mode
+2024-08-25 18:47:39,027 -- WARNING -- Missing Python Lib (No module named 'wifi'), Wifi plugin is disabled
+2024-08-25 18:47:39,027 -- WARNING -- Wifi lib is not compliant with Python 3, Wifi plugin is disabled
+2024-08-25 18:47:39,055 -- WARNING -- Missing Python Lib (No module named 'pymdstat'), Raid plugin is disabled
+2024-08-25 18:47:39,134 -- WARNING -- Error loading Podman deps Lib. Podman feature in the Containers plugin is disabled (No module named 'podman')
+2024-08-25 18:47:39,135 -- ERROR -- containers (Docker) plugin - Can't connect to Docker (Error while fetching server API version: HTTPConnection.request() got an unexpected keyword argument 'chunked')
+2024-08-25 18:47:39,136 -- WARNING -- Missing Python Lib (No module named 'py3nvml'), Nvidia GPU plugin is disabled
+2024-08-25 18:47:39,143 -- WARNING -- Sparklines module not found (No module named 'sparklines')
+2024-08-25 18:47:39,146 -- WARNING -- Missing Python Lib (No module named 'pySMART'), HDD Smart plugin is disabled
+2024-08-25 18:47:39,239 -- INFO -- Glances RESTful API Server started on http://0.0.0.0:61208/api/3/
+2024-08-25 18:47:39,240 -- INFO -- Glances Web User Interface started on http://0.0.0.0:61208/
+2024-08-25 18:47:39,241 -- CRITICAL -- Error: Can not ran Glances Web server ([Errno 98] Address already in use)
+2024-08-25 18:57:12,863 -- INFO -- Start Glances 3.4.0.3
+2024-08-25 18:57:12,863 -- INFO -- CPython 3.12.3 (/usr/bin/python3) and psutil 5.9.8 detected
+2024-08-25 18:57:12,866 -- INFO -- Read configuration file '/etc/glances/glances.conf'
+2024-08-25 18:57:12,867 -- INFO -- Start GlancesServer mode
+2024-08-25 18:57:12,868 -- CRITICAL -- Cannot start Glances server: [Errno 98] Address already in use
+2024-08-25 19:01:38,061 -- INFO -- Start Glances 3.4.0.3
+2024-08-25 19:01:38,061 -- INFO -- CPython 3.12.3 (/usr/bin/python3) and psutil 5.9.8 detected
+2024-08-25 19:03:24,444 -- INFO -- Start Glances 3.4.0.3
+2024-08-25 19:03:24,445 -- INFO -- CPython 3.12.3 (/usr/bin/python3) and psutil 5.9.8 detected
+2024-08-25 19:03:24,447 -- INFO -- Read configuration file '/etc/glances/glances.conf'
+2024-08-25 19:03:24,453 -- INFO -- Start GlancesStandalone mode
+2024-08-25 19:03:24,456 -- WARNING -- Missing Python Lib (No module named 'wifi'), Wifi plugin is disabled
+2024-08-25 19:03:24,456 -- WARNING -- Wifi lib is not compliant with Python 3, Wifi plugin is disabled
+2024-08-25 19:03:24,486 -- WARNING -- Missing Python Lib (No module named 'pymdstat'), Raid plugin is disabled
+2024-08-25 19:03:24,567 -- WARNING -- Error loading Podman deps Lib. Podman feature in the Containers plugin is disabled (No module named 'podman')
+2024-08-25 19:03:24,568 -- ERROR -- containers (Docker) plugin - Can't connect to Docker (Error while fetching server API version: HTTPConnection.request() got an unexpected keyword argument 'chunked')
+2024-08-25 19:03:24,568 -- WARNING -- Missing Python Lib (No module named 'py3nvml'), Nvidia GPU plugin is disabled
+2024-08-25 19:03:24,576 -- WARNING -- Sparklines module not found (No module named 'sparklines')
+2024-08-25 19:03:24,579 -- WARNING -- Missing Python Lib (No module named 'pySMART'), HDD Smart plugin is disabled
+2024-08-26 08:30:29,140 -- INFO -- Start Glances 3.4.0.3
+2024-08-26 08:30:29,155 -- INFO -- CPython 3.12.3 (/usr/bin/python3) and psutil 5.9.8 detected
+2024-08-26 08:30:29,226 -- INFO -- Read configuration file '/etc/glances/glances.conf'
+2024-08-26 08:30:29,479 -- INFO -- Start GlancesStandalone mode
+2024-08-26 08:30:29,548 -- WARNING -- Missing Python Lib (No module named 'wifi'), Wifi plugin is disabled
+2024-08-26 08:30:29,548 -- WARNING -- Wifi lib is not compliant with Python 3, Wifi plugin is disabled
+2024-08-26 08:30:29,883 -- WARNING -- Missing Python Lib (No module named 'pymdstat'), Raid plugin is disabled
+2024-08-26 08:30:33,171 -- WARNING -- Error loading Podman deps Lib. Podman feature in the Containers plugin is disabled (No module named 'podman')
+2024-08-26 08:30:33,173 -- ERROR -- containers (Docker) plugin - Can't connect to Docker (Error while fetching server API version: HTTPConnection.request() got an unexpected keyword argument 'chunked')
+2024-08-26 08:30:33,174 -- WARNING -- Missing Python Lib (No module named 'py3nvml'), Nvidia GPU plugin is disabled
+2024-08-26 08:30:33,236 -- WARNING -- Sparklines module not found (No module named 'sparklines')
+2024-08-26 08:30:33,243 -- WARNING -- Missing Python Lib (No module named 'pySMART'), HDD Smart plugin is disabled
+2024-08-26 08:30:48,059 -- INFO -- Start Glances 3.4.0.3
+2024-08-26 08:30:48,060 -- INFO -- CPython 3.12.3 (/usr/bin/python3) and psutil 5.9.8 detected
+2024-08-26 08:33:24,189 -- INFO -- Start Glances 3.4.0.3
+2024-08-26 08:33:24,189 -- INFO -- CPython 3.12.3 (/usr/bin/python3) and psutil 5.9.8 detected
+2024-08-26 08:33:24,193 -- INFO -- Read configuration file '/etc/glances/glances.conf'
+2024-08-26 08:33:24,361 -- INFO -- Start GlancesWebServer mode
+2024-08-26 08:33:24,369 -- WARNING -- Missing Python Lib (No module named 'wifi'), Wifi plugin is disabled
+2024-08-26 08:33:24,369 -- WARNING -- Wifi lib is not compliant with Python 3, Wifi plugin is disabled
+2024-08-26 08:33:24,403 -- WARNING -- Missing Python Lib (No module named 'pymdstat'), Raid plugin is disabled
+2024-08-26 08:33:24,499 -- WARNING -- Error loading Podman deps Lib. Podman feature in the Containers plugin is disabled (No module named 'podman')
+2024-08-26 08:33:24,500 -- ERROR -- containers (Docker) plugin - Can't connect to Docker (Error while fetching server API version: HTTPConnection.request() got an unexpected keyword argument 'chunked')
+2024-08-26 08:33:24,500 -- WARNING -- Missing Python Lib (No module named 'py3nvml'), Nvidia GPU plugin is disabled
+2024-08-26 08:33:24,509 -- WARNING -- Sparklines module not found (No module named 'sparklines')
+2024-08-26 08:33:24,512 -- WARNING -- Missing Python Lib (No module named 'pySMART'), HDD Smart plugin is disabled
+2024-08-26 08:33:24,662 -- INFO -- Glances RESTful API Server started on http://0.0.0.0:61208/api/3/
+2024-08-26 08:33:24,664 -- INFO -- Glances Web User Interface started on http://0.0.0.0:61208/
+2024-08-26 08:34:36,287 -- INFO -- Start Glances 3.4.0.3
+2024-08-26 08:34:36,287 -- INFO -- CPython 3.12.3 (/usr/bin/python3) and psutil 5.9.8 detected
