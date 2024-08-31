@@ -1,0 +1,46 @@
+collections: 
+  Josh Gates Collectoin:
+    tvdb_show: 
+      - https://www.thetvdb.com/series/destination-truth
+      - https://www.thetvdb.com/series/expedition-unknown
+      - https://www.thetvdb.com/series/expedition-back-to-the-future
+      - https://www.thetvdb.com/series/expedition-x
+      - https://www.thetvdb.com/series/josh-gates-after-dark
+      - https://www.thetvdb.com/series/josh-gates-tonight
+      - https://www.thetvdb.com/series/tales-from-the-explorers-club
+      - https://www.thetvdb.com/series/expedition-unknown-hunt-for-the-yeti
+      - https://www.thetvdb.com/movies/yeti-myth-man-or-beast
+      - https://www.thetvdb.com/series/legendary-locations
+      - https://www.thetvdb.com/movies/expedition-unkdown-shark-trek
+    tmdb_poster: 82728
+    collection_order: released
+    sync_mode: sync 
+  Bluey Collection:
+    trakt_list: https://trakt.tv/users/wikid82/lists/bluey
+    collection_order: released
+    tmdb_poster: 82728
+    sync_mode: sync 
+  The Blacklist Collection:
+    trakt_list: https://trakt.tv/users/wikid82/lists/the-blacklist
+    sync_mode: sync 
+    tmdb_poster: 46952
+  The UnXplained Collection:
+    trakt_list: https://trakt.tv/users/wikid82/lists/the-unxplained
+    sync_mode: sync 
+    tmdb_poster: 91371
+  Ancient Aliens Collection:
+    trakt_list: https://trakt.tv/users/wikid82/lists/ancient-aliens
+    sync_mode: sync 
+    tmdb_poster: 32608
+  Naked and Afraid Collection:
+    trakt_list: https://trakt.tv/users/wikid82/lists/naked-and-afraid
+    sync_mode: sync 
+    tmdb_poster: 58832
+  Letterkenny Collections:
+    trakt_list: https://trakt.tv/users/wikid82/lists/letterkenny
+    sync_mode: sync 
+    tmdb_poster: 65798
+  The Proof Is Out There Collections:
+    trakt_list: https://trakt.tv/users/wikid82/lists/the-proof-is-out-there
+    sync_mode: sync 
+    tmdb_poster: 116124
