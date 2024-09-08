@@ -1,0 +1,16 @@
+services:
+  app:
+    image: jc21/nginx-proxy-manager:latest
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - '82:80'
+      - '444:443'
+      - '81:81'
+    environment:
+      PUID: 1000
+      PGID: 1000 
+      DISABLE_IPV6: 'true'
+    volumes:
+      - /nginx/data:/data
+      - /nginx/letsencrypt:/etc/letsencrypt
