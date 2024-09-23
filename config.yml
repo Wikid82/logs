@@ -1,0 +1,421 @@
+services:
+  dashy:
+    image: lissy93/dashy
+    container_name: dashy
+    volumes:
+      - >-
+        /home/jeremy/Server/Configs/dashboard/dashy/appdata/config.yml:/app/user-data/conf.yml
+    ports:
+      - '8000:8080'
+    environment:
+      NODE_ENV: production
+      PUID: 1000
+      PGID: 1000
+    restart: unless-stopped
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - /app/services/healthcheck
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+  pages:
+    - name: Glances
+  path: glances.yml
+  displayData:
+    hideForGuests: false
+  pageInfo: null
+  title: Home
+  description: ''
+  navLinks: []
+  sections:
+    - name: Media Server
+      displayData: null
+      sortBy: alphabetical
+      rows: 0
+      cols: 4
+      collapsed: false
+      hideForGuests: false
+      appConfig.enableMultiTasking: true
+      items: null
+    - title: Sonarr
+      description: TV Shows
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/png/sonarr.png'
+      url: 'https://sonarr.hatfieldhosted.com'
+      target: newtab
+      statusCheck: true
+      id: 0_1143_sonarr
+    - title: Radarr
+      description: Movies
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/radarr-light.svg'
+      url: 'https://radarr.hatfieldhosted.com'
+      target: newtab
+      statusCheck: true
+      id: 1_1143_radarr
+    - title: Plex
+      description: ''
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/plex.svg'
+      url: 'https://plex.hatfieldhosted.com/web/index.html'
+      target: newtab
+      statusCheck: true
+      id: 2_1143_plex
+    - title: Overseerr
+      description: Media Requests
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/overseerr.svg'
+      url: 'https://overseerr.hatfieldhosted.com'
+      target: newtab
+      statusCheck: true
+      id: 3_1143_overseerr
+    - title: Bazarr
+      description: Subtitles
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/png/bazarr.png'
+      url: 'https://bazarr.hatfieldhosted.com/login'
+      target: newtab
+      statusCheck: true
+      id: 4_1143_bazarr
+    - title: Trailarr
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/png/trailarr.png'
+      url: 'https://trailarr.hatfieldhosted.com/home'
+      target: newtab
+      statusCheck: true
+      id: 5_1143_trailarr
+    - name: Download Clients
+      displayData: null
+      sortBy: alphabetical
+      rows: 0
+      cols: 4
+      collapsed: false
+      hideForGuests: false
+      items: null
+    - title: SABnzbd
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/sabnzbd.svg'
+      url: 'https://sabnzbd.hatfieldhosted.com'
+      target: newtab
+      statusCheck: true
+      id: 0_1578_sabnzbd
+    - title: Prowlarr
+      description: Indexers
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/prowlarr.svg'
+      url: 'https://prowlarr.hatfieldhosted.com'
+      target: newtab
+      statusCheck: true
+      id: 1_1578_prowlarr
+    - title: TubeSync
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/png/tubesync.png'
+      url: 'https://tubesync.hatfieldhosted.com'
+      target: newtab
+      statusCheck: true
+      id: 2_1578_tubesync
+    - name: Monitoring
+      displayData:
+        sortBy: alphabetical
+        rows: 0
+        cols: 4
+        collapsed: false
+        hideForGuests: true
+        appConfig.enableMultiTasking: true
+      items: null
+    - title: Speedtest
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/png/speedtest-tracker.png'
+      url: 'https://speedtest.hatfieldhosted.com'
+      target: newtab
+      statusCheck: true
+      id: 0_1062_speedtest
+    - title: Glances
+      icon: hl-glances
+      url: 'http://192.168.12.85:61210'
+      target: newtab
+      statusCheck: true
+      id: 1_1062_glances
+    - title: WatchYourLan
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/png/watchyourlan.png'
+      url: 'http://192.168.12.85:8840'
+      target: newtab
+      statusCheck: true
+      id: 2_1062_watchyourlan
+    - title: Gotify
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/gotify.svg'
+      url: 'https://gotify.hatfieldhosted.com/#/'
+      target: newtab
+      statusCheck: true
+      id: 3_1062_gotify
+    - title: Tautulli
+      description: Stats
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/tautulli.svg'
+      url: 'https://tautulli.hatfieldhosted.com/home'
+      target: newtab
+      statusCheck: true
+      id: 4_1062_tautulli
+    - name: The Shelter
+      displayData:
+        sortBy: alphabetical
+        rows: 0
+        cols: 1
+        collapsed: false
+        hideForGuests: false
+        appConfig.enableMultiTasking: true
+      items:
+        - title: FileFlows
+          description: File Processing
+          icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/fileflows.svg'
+          url: 'https://fileflows.hatfieldhosted.com'
+          target: newtab
+          statusCheck: true
+          id: 0_1048_fileflows
+        - title: Mealie
+          description: Recipe Managment
+          icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/png/mealie.png'
+          url: 'https://mealie.hatfieldhosted.com/g/home'
+          target: newtab
+          statusCheck: true
+          id: 1_1048_mealie
+        - title: Vikunja
+          icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/vikunja.svg'
+          url: 'https://vakunja.hatfieldhosted.com/login'
+          target: newtab
+          statusCheck: true
+      id: 2_1048_vikunja
+    - name: Hostinger VPS
+      displayData:
+        sortBy: alphabetical
+        rows: 0
+        cols: 1
+        collapsed: false
+        hideForGuests: false
+      items:
+        - title: Nginx PM
+          icon: >-
+            https://cdn.jsdelivr.net/gh/selfhst/icons/svg/nginx-proxy-manager.svg
+          url: 'https://nginx.hatfieldhosted.com/login'
+          target: newtab
+          statusCheck: true
+          id: 0_1228_nginxpm
+        - title: Portainer
+          icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/portainer.svg'
+          url: 'https://portainer.hatfieldhosted.com'
+          target: newtab
+          statusCheck: true
+          id: 1_1228_portainer
+    - name: Savor My Flavor
+      displayData:
+        sortBy: most-used
+        rows: 0
+        cols: 1
+        collapsed: false
+        hideForGuests: false
+      items: []
+    - name: Proton
+      displayData:
+        sortBy: alphabetical
+        rows: 0
+        cols: 1
+        collapsed: false
+        hideForGuests: false
+      items:
+        - title: Mail
+          icon: favicon
+          url: 'https://theposterdb.com/api/assets/116821'
+          target: newtab
+          id: 0_642_mail
+        - title: Drive
+          icon: favicon
+          url: 'https://drive.proton.me/'
+          target: newtab
+          id: 1_642_drive
+    - name: Links
+      displayData: null
+      sortBy: alphabetical
+      rows: 0
+      cols: 2
+      collapsed: false
+      hideForGuests: false
+      items: null
+    - title: NewReleases.io
+      icon: favicon
+      url: 'https://newreleases.io'
+      target: newtab
+      statusCheck: false
+      id: 0_513_newreleasesio
+    - title: Docker Hub
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/docker.svg'
+      url: 'https://hub.docker.com'
+      target: newtab
+      statusCheck: false
+      id: 1_513_dockerhub
+    - title: GitHub
+      icon: hl-github-light
+      url: 'https://github.com'
+      target: newtab
+      id: 2_513_github
+    - title: Trakt
+      icon: favicon
+      url: 'https://trakt.tv/dashboard'
+      target: newtab
+      id: 3_513_trakt
+    - title: TMDB
+      icon: >-
+        https://cdn.iconscout.com/icon/free/png-256/free-the-movie-database-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-7-pack-logos-icons-3029037.png?f=webp
+      url: 'https://www.themoviedb.org'
+      target: newtab
+      id: 4_513_tmdb
+    - title: TVDB
+      icon: favicon
+      url: 'https://www.thetvdb.com'
+      target: newtab
+      id: 5_513_tvdb
+    - title: ZeroTeir
+      icon: favicon
+      url: 'https://my.zerotier.com'
+      target: newtab
+      id: 6_513_zeroteir
+    - title: ThePosterDB
+      icon: favicon
+      url: 'https://theposterdb.com'
+      target: newtab
+      id: 7_513_theposterdb
+    - title: FrugalUsenet
+      icon: favicon
+      url: 'https://frugalusenet.com'
+      target: newtab
+      id: 8_513_frugalusenet
+    - title: NZBGeek
+      icon: favicon
+      url: 'https://nzbgeek.info'
+      target: newtab
+      id: 9_513_nzbgeek
+    - title: NameCheap
+      icon: favicon
+      url: 'https://www.namecheap.com'
+      target: newtab
+      id: 10_513_namecheap
+    - title: Podman
+      icon: favicon
+      url: 'https://podman.io'
+      target: newtab
+      id: 11_513_podman
+    - title: Docker
+      icon: hl-docker
+      url: 'https://www.docker.com'
+      target: newtab
+      id: 12_513_docker
+    - title: Nginx PM
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/nginx-proxy-manager.svg'
+      url: 'https://nginxproxymanager.com'
+      target: newtab
+      id: 13_513_nginxpm
+    - title: Reddit
+      icon: favicon
+      url: 'http://www.reddit.com'
+      target: newtab
+      id: 14_513_reddit
+    - title: Discord
+      icon: favicon
+      url: 'http://discord.com'
+      target: newtab
+      id: 15_513_discord
+    - title: Selfh.st
+      icon: favicon
+      url: 'https://selfh.st'
+      target: newtab
+      id: 16_513_selfhst
+    - title: Hostinger
+      icon: favicon
+      url: >-
+        https://hpanel.hostinger.com/?redirect_back_url=https%3A%2F%2Fauth.hostinger.com%2Flogin
+      target: newtab
+      id: 17_513_hostinger
+    - title: LetsDebug
+      icon: favicon
+      url: 'https://letsdebug.net'
+      target: newtab
+      id: 18_513_letsdebug
+    - title: Cloudflare
+      icon: favicon
+      url: 'https://www.cloudflare.com'
+      target: newtab
+      id: 19_513_cloudflare
+    - name: Docs
+      displayData: null
+      sortBy: alphabetical
+      rows: 0
+      cols: 2
+      collapsed: false
+      hideForGuests: false
+      items: null
+    - title: Overseerr
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/overseerr.svg'
+      url: 'https://docs.overseerr.dev'
+      target: newtab
+      statusCheck: false
+      id: 0_393_overseerr
+    - title: Dashy
+      icon: hl-dashy
+      url: 'https://dashy.to/docs/'
+      target: newtab
+      statusCheck: false
+      id: 1_393_dashy
+    - title: FileFlows
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/fileflows.svg'
+      url: 'https://fileflows.com/docs'
+      target: newtab
+      statusCheck: false
+      id: 2_393_fileflows
+    - title: Servarr
+      icon: favicon
+      url: 'https://wiki.servarr.com'
+      target: newtab
+      statusCheck: false
+      id: 3_393_servarr
+    - title: Kometa
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/png/kometa.png'
+      url: 'https://kometa.wiki/en/latest/'
+      target: newtab
+      statusCheck: false
+      id: 4_393_kometa
+    - title: Tautulli
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/tautulli.svg'
+      url: 'https://docs.tautulli.com'
+      target: newtab
+      statusCheck: false
+      id: 5_393_tautulli
+    - title: Trailarr
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/png/trailarr.png'
+      url: 'https://nandyalu.github.io/trailarr/'
+      target: newtab
+      id: 6_393_trailarr
+    - title: Mealie
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/png/mealie.png'
+      url: 'https://docs.mealie.io'
+      target: newtab
+      id: 7_393_mealie
+    - title: Watchtower
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/png/watchtower.png'
+      url: 'https://containrrr.dev/watchtower/'
+      target: newtab
+      id: 8_393_watchtower
+    - title: Podman
+      icon: 'https://icon.icepanel.io/Technology/svg/Podman.svg'
+      url: 'https://docs.podman.io'
+      target: newtab
+      id: 9_393_podman
+    - title: Docker
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/docker.svg'
+      url: 'https://docs.docker.com'
+      target: newtab
+      id: 10_393_docker
+    - title: Gotify
+      icon: 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/gotify.svg'
+      url: 'https://gotify.net/docs/index'
+      target: newtab
+      id: 11_393_gotify
+    - title: Buildarr
+      icon: favicon
+      url: 'https://buildarr.github.io'
+      target: newtab
+      id: 12_393_buildarr
+appConfig:
+  theme: nord-frost
+  layout: auto
+  iconSize: medium
